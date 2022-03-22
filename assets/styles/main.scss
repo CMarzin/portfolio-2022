@@ -1,0 +1,9 @@
+/**
+ * Base files available globally
+ */
+@use 'basics';
+
+body {
+  font-family: $graphik-medium;
+  color: red;
+}

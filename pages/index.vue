@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <navigation-header />
 </template>
 
 <script>
