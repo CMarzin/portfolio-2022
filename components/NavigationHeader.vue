@@ -1,12 +1,12 @@
 <template>
   <header class="navigation-header">
-     <div class="navigation-header__logo">
+     <div class="navigation-header__logo navigation-header__background">
         <logo-component />
       </div>
-      <nav class="navigation-header__nav">
+      <nav class="navigation-header__nav navigation-header__background">
         <navigation-item></navigation-item>
       </nav>
-      <div class="navigation-header__burger">
+      <div class="navigation-header__burger navigation-header__background">
         <burger-menu />
       </div>
   </header>
@@ -27,9 +27,8 @@
     grid-row-gap: 0px;
   }
 
-  .navigation-header__logo {
+  .navigation-header__background {
     position: relative;
-    padding: $header-padding;
     background-color: var(--currentGlobalColor);
     border-radius: $base-radius;
 
@@ -40,44 +39,31 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-color: hsl(0, 0%, 90%);
       border-radius: $base-radius;
+    }
+  }
+
+  .navigation-header__logo {
+    padding: $header-padding;
+
+    &:before {
+      background-color: hsl(0, 0%, 90%);
     }
   }
 
   .navigation-header__nav {
-    position: relative;
     padding: $header-padding;
-    background-color: var(--currentGlobalColor);
-    border-radius: $base-radius;
 
     &:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: hsl(0, 0%, 75%);
-      border-radius: $base-radius;
+      background-color: hsl(0, 0%, 100%, 75%);
     }
   }
 
   .navigation-header__burger {
-    position: relative;
     padding: 16px;
-    background-color: var(--currentGlobalColor);
-    border-radius: $base-radius;
 
     &:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
       background-color: hsl(0, 0%, 90%);
-      border-radius: $base-radius;
     }
   }
 

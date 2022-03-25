@@ -16,10 +16,22 @@
 <style scoped lang="scss">
 
 .default-layout {
+  position: relative;
   background-color: #000;
-  background-image: url('@/assets/images/Noise-big.png');
   padding: 16px;
   min-height: 100%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('@/assets/images/Noise-big.png');
+    mix-blend-mode: hard-light;
+    opacity: 0.35;
+  }
 }
 
 .default-layout__main-container {
