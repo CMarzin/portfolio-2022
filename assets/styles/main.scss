@@ -12,6 +12,11 @@ html, body, #__nuxt, #__layout{
   height: 100%;
 }
 
+body {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .main-layout {
   min-height: 100%;
 }

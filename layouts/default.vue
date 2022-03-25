@@ -28,7 +28,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('@/assets/images/Noise-big.png');
+    background-image: url('@/assets/images/Noise-big-720.png');
     mix-blend-mode: hard-light;
     opacity: 0.35;
   }
