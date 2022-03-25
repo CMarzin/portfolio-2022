@@ -1,9 +1,17 @@
 /**
  * Base files available globally
  */
-@use 'basics';
+@import 'helpers';
+@import 'basics';
 
-body {
-  font-family: $graphik-medium;
-  color: red;
+:root {
+  --currentGlobalColor: #003DA2;
+}
+
+html, body, #__nuxt, #__layout{
+  height: 100%;
+}
+
+.main-layout {
+  min-height: 100%;
 }

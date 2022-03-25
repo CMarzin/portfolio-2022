@@ -1,3 +1,6 @@
+import Sass from 'sass'
+import Fiber from 'fibers'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -34,7 +37,7 @@ export default {
   ],
   styleResources: {
     scss: [
-      './assets/styles/helpers/*.scss',
+      './assets/styles/helpers/_index.scss',
       ]
   },
 
@@ -42,5 +45,14 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    loaders: {
+      scss: {
+        implementation: Sass,
+        sassOptions: {
+          fiber: Fiber
+        }
+      }
+    }
+  },
 }

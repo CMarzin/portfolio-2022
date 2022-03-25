@@ -1,5 +1,5 @@
 <template>
-  <navigation-header />
+  <div></div>
 </template>
 
 <script>
