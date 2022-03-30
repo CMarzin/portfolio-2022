@@ -1,0 +1,19 @@
+.navigation-header__right--open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: $black;
+  border: 2px solid $white;
+  border-radius: $base-radius;
+}
+
+.navigation-header__nav-close-button {
+  display: flex;
+  top: 0;
+  right: 0;
+  transition: opacity .2s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding-right: 20px;
+}

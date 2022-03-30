@@ -1,0 +1,7 @@
+.navigation-header__right--closed {
+  display: grid;
+  grid-template-columns: 1fr 58px;
+  grid-template-rows: 1fr;
+  grid-column-gap: $column-gap;
+  grid-row-gap: 0px;
+}

@@ -1,5 +1,5 @@
 <template>
-  <ul :class="customClass">
+  <ul class="navigation-header__nav-items">
     <li v-for="(item, index) in items" :key="`${item.name}-${index}`">{{ $t(item.name) }}</li>
   </ul>
 </template>
@@ -10,15 +10,9 @@
       items: {
         type: Array,
         default: () => []
-      },
-      customClass: {
-        type: String,
-        default: () => ''
       }
     },
   }
 </script>
 
-<style scoped>
-
-</style>
+<style src="./_style.scss" lang="scss"></style>
