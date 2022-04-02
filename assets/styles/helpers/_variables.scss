@@ -1,4 +1,21 @@
-$graphik-medium: 'Graphik500Medium';
+:root {
+  --currentGlobalColor: #003DA2;
+  --text-base-size: 1rem;
+  --space-unit: 1rem;
+  --space-xxs: calc(0.25 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-mdx: calc(1.50 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+}
+
+$g-regular: 'Graphik400Regular';
+$g-medium: 'Graphik500Medium';
+$g-semibold: 'Graphik600Semibold';
+
 $base-radius: 4px;
 
 $header-padding: 16px 32px;

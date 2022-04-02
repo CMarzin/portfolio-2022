@@ -1,3 +1,5 @@
 @use '../helpers' as *;
 
-// @include font-face('Graphik500Medium', '../../fonts/Graphik-500-Medium');
+@include font-face('Graphik400Regular', '~assets/fonts/Graphik-400-Regular', 400, regular);
+@include font-face('Graphik500Medium', '~assets/fonts/Graphik-500-Medium', 500, null);
+@include font-face('Graphik600Semibold', '~assets/fonts/Graphik-600-Semibold', 600, semibold);

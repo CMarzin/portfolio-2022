@@ -4,7 +4,7 @@
     <navigation-item :items="navigationItems"/>
 
     <div class="navigation-header__nav-close-button" @click="toggleMenu">
-      <span>{{ $t('close') }}</span>
+      <span class="navigation-header__nav-close-button-text">{{ $t('close') }}</span>
       <close-menu />
     </div>
 

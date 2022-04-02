@@ -1,7 +1,7 @@
 .default-layout {
   position: relative;
-  background-color: #000;
-  padding: 16px;
+  background-color: $black;
+  padding: var(--space-sm);
   min-height: 100%;
 
   &:before {

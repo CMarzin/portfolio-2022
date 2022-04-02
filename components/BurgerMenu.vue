@@ -6,6 +6,5 @@
 <style scoped lang="scss">
   .burger-svg {
     position: relative;
-    z-index: 1;
   }
 </style>

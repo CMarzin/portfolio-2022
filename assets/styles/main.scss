@@ -4,17 +4,14 @@
 @import 'helpers';
 @import 'basics';
 
-:root {
-  --currentGlobalColor: #003DA2;
-}
 
 html, body, #__nuxt, #__layout{
   height: 100%;
 }
 
 body {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--text-base-size); // 16px
+  line-height: var(--space-mdx); // 24px
 }
 
 .main-layout {

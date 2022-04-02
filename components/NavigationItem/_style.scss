@@ -5,4 +5,10 @@
 
 .navigation-header__nav-items li {
   list-style: none;
+  font-family: $g-regular;
+  margin-left: var(--space-xs);
+}
+
+.navigation-header__nav-items li:first-child {
+  margin-left: 0;
 }

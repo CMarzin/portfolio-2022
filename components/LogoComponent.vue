@@ -20,6 +20,5 @@
 <style scoped lang="scss">
   .logo-svg {
     position: relative;
-    z-index: 1;
   }
 </style>
