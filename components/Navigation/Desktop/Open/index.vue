@@ -1,7 +1,7 @@
 <template>
   <nav class="navigation-header__right--open">
 
-    <navigation-item :items="navigationItems"/>
+    <navigation-desktop-item :items="navigationItems"/>
 
     <div class="navigation-header__nav-close-button" @click="toggleMenu">
       <span class="navigation-header__nav-close-button-text">{{ $t('close') }}</span>
@@ -24,4 +24,4 @@
   }
 </script>
 
-<style src="@/components/NavigationOpen/_style.scss" lang="scss"></style>
+<style src="./_style.scss" lang="scss"></style>

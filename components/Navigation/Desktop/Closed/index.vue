@@ -15,4 +15,4 @@
   }
 </script>
 
-<style src="@/components/NavigationClosed/_style.scss" lang="scss"></style>
+<style src="./_style.scss" lang="scss"></style>

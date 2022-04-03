@@ -6,6 +6,10 @@
   grid-template-rows: 1fr;
   grid-column-gap: $column-gap;
   grid-row-gap: 0px;
+
+  @include mq($until: 'tablet') {
+    grid-template-columns: 65px 1fr;
+  }
 }
 
 .navigation-header__background {
@@ -28,6 +32,10 @@
 
 .navigation-header__logo {
   padding: $header-padding;
+
+  @include mq($until: 'tablet') {
+    padding: var(--space-xs);
+  }
 
   &:before {
     background-color: hsl(0, 0%, 90%);

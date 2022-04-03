@@ -20,7 +20,12 @@
         menuState: 'ui/getMenuState'
       }),
       currentMenuComponent () {
-        return this.menuState === 'closed' ? 'NavigationClosed' : 'NavigationOpen'
+        if (process.browser) {
+          const display = this.$helpers.isMobile() ? 'Mobile' : 'Desktop'
+          return this.menuState === 'closed' ? `Navigation${display}Closed` : `Navigation${display}Open`
+        } else {
+          return this.menuState === 'closed' ? 'NavigationDesktopClosed' : 'NavigationDesktopOpen'
+        }
       }
     }
   }

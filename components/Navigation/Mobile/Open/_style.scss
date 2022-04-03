@@ -1,0 +1,23 @@
+.navigation-header__right--open {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+  background: $black-90;
+  border: 2px solid $white;
+  border-radius: $base-radius;
+}
+
+.navigation-header__nav-close-button {
+  display: flex;
+  padding-right: var(--space-md);
+  text-transform: uppercase;
+  font-family: $g-semibold;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+.navigation-header__nav-close-button-text {
+  margin-right: var(--space-sm);
+}
