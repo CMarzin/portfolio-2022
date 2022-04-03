@@ -1,14 +1,15 @@
 <template>
   <div>
-   
+
   </div>
 </template>
 
 <script>
-export default {
-  name: 'IndexPage',
-}
+  export default {
+    
+  }
 </script>
-<style>
+
+<style scoped>
 
 </style>
