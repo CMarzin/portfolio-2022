@@ -1,0 +1,45 @@
+.footer {
+  color: $white;
+  font-family: $g-regular;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+
+  a {
+    color: $white;
+  }
+}
+
+.footer__mail {
+  color: $white;
+}
+
+.footer__thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  opacity: .5;
+}
+
+.footer__thanks-heart {
+  margin-left: var(--space-xxs);
+  margin-top: 7px;
+}
+
+.footer__socials {
+  display: flex;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-left: var(--space-xs);
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+}

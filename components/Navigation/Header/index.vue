@@ -2,7 +2,7 @@
   <header class="navigation-header">
 
     <nuxt-link to='/' class="navigation-header__logo navigation-header__background">
-      <logo-component />
+      <svg-logo />
     </nuxt-link>
 
     <keep-alive>

@@ -3,7 +3,7 @@
       <nav class="navigation-header__background"></nav>
 
       <div class="navigation-header__burger navigation-header__background" @click="toggleMenu">
-        <burger-menu />
+        <svg-burger-menu />
       </div>
   </div>
 </template>

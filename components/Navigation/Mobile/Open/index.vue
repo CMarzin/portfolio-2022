@@ -5,7 +5,7 @@
 
     <div class="navigation-header__nav-close-button" @click="toggleMenu">
       <span class="navigation-header__nav-close-button-text">{{ $t('close') }}</span>
-      <close-menu />
+      <svg-close-menu />
     </div>
 
   </nav>
