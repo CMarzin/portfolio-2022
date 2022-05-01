@@ -59,7 +59,7 @@ export default {
     ],
     lazy: true,
     langDir: 'lang/',
-    defaultLocale: 'en'
+    defaultLocale: 'fr'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,0 +1,40 @@
+.dots {
+  list-style-type:none;
+  background:white;
+  filter: blur(5px) contrast(10);
+  padding: 0;
+  margin: 0;
+  margin-left: -10px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  position:relative;
+}
+
+.dot {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius:100%;
+  width: 16px;
+  height: 16px;
+  background:black;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  color:white;
+  position: relative;
+  z-index: 2;
+}
+
+.select {
+  display:block;
+  border-radius:100%;
+  width: 26px;
+  height: 26px;
+  background:black;
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  left: 0px;
+  pointer-events: none;
+}

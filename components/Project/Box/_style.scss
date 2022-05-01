@@ -1,0 +1,26 @@
+.project-box__container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project-box__title {
+  font-family: $b-regular;
+  font-size: calc(3 * var(--space-unit)); // 58px
+  line-height: calc(3.75 * var(--space-unit)); // 60px
+  margin-top: var(--space-sm);
+}
+
+.project-box__subtitle {
+  font-size: var(--space-sm); // 12px
+  font-family: $g-semibold;
+  letter-spacing: 8px;
+ }
+
+.project-box__subtitle-projects { margin-top: var(--space-mdx); }
+
+.project-box__project-button { margin-top: var(--space-mdx); }
+
+.project-box__description {
+  font-family: $g-regular;
+  margin-top: var(--space-mdx);
+}

@@ -4,7 +4,7 @@
   --space-unit: 1rem;
   --space-xxs: calc(0.25 * var(--space-unit)); // 4px
   --space-xs: calc(0.5 * var(--space-unit)); // 8px
-  --space-sm: calc(0.75 * var(--space-unit)); // 16px
+  --space-sm: calc(0.75 * var(--space-unit)); // 12px
   --space-md: calc(1.25 * var(--space-unit)); // 20px
   --space-mdx: calc(1.50 * var(--space-unit)); //24px
   --space-lg: calc(2 * var(--space-unit)); // 32px
@@ -12,6 +12,7 @@
   --space-xxl: calc(5.25 * var(--space-unit)); // 84px
 }
 
+$b-regular: 'ButlerRegular';
 $g-regular: 'Graphik400Regular';
 $g-medium: 'Graphik500Medium';
 $g-semibold: 'Graphik600Semibold';
@@ -26,4 +27,6 @@ $column-gap: 8px;
 $black: hsl(0, 0%, 0%);
 $black-90: hsla(0, 0%, 100%, 0.1);
 $white: hsl(0, 0%, 100%);
+$white-90: hsla(0, 0%, 100%, 0.9);
 $yellow: hsl(41, 100%, 59%);
+$background-grid: hsla(227, 10%, 28%, 0.4);

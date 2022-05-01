@@ -31,14 +31,14 @@
   grid-column-gap: $column-gap;
   grid-row-gap: $column-gap;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .default-layout__aside {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 8%;
   grid-column-gap: $column-gap;
   grid-row-gap: $column-gap;
 
@@ -56,31 +56,12 @@
 .default-layout__aside .default-layout__aside-part-3,
 .default-layout__aside .default-layout__aside-part-4,
 .default-layout__aside .default-layout__aside-part-5 {
-  background-color: rgba(64,67,78,0.4);
+  background-color: $background-grid;
 }
 
-.default-layout__aside-part-1 {
-  grid-area: 1 / 2 / 4 / 3;
-}
-
-.default-layout__aside-part-2 {
-  grid-area: 4 / 1 / 5 / 3;
-}
-// background
-.default-layout__aside-part-3 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-// background
-.default-layout__aside-part-4 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-// background
-.default-layout__aside-part-5 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-// Footer
-.default-layout__aside-part-6 {
-  grid-area: 5 / 1 / 6 / 3;
-}
+.default-layout__aside-part-1 { grid-area: 1 / 2 / 4 / 3; } // Background
+.default-layout__aside-part-2 { grid-area: 4 / 1 / 5 / 3; } // Background
+.default-layout__aside-part-3 { grid-area: 3 / 1 / 4 / 2; } // Background
+.default-layout__aside-part-4 { grid-area: 2 / 1 / 3 / 2; } // Background
+.default-layout__aside-part-5 { grid-area: 1 / 1 / 2 / 2; } // Background
+.default-layout__aside-part-6 { grid-area: 5 / 1 / 6 / 3; } // Footer
