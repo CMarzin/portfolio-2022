@@ -11,6 +11,8 @@
     <p class="project-box__description">During 3 months, I had my internship at Cher Ami in Lyon. My first project consisted of making some changes on several pages of their website (about/contact). During 3 months, I had my internship at Cher Ami in Lyon.</p>
 
     <h2 class="project-box__subtitle project-box__subtitle-projects">{{ $t('OTHER PROJECTS') }}</h2>
+
+    <project-selector />
   </div>
 </template>
 

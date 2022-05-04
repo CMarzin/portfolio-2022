@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// Inspired by https://codepen.io/lbebber/pen/QWrLBE?editors=1111
 import { gsap, Back } from 'gsap'
   export default {
     data() {

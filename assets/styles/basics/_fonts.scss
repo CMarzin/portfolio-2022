@@ -1,6 +1,6 @@
 @use '../helpers' as *;
 
-@include font-face('ButlerRegular', '~assets/fonts/Butler_Regular', 400, regular);
-@include font-face('Graphik400Regular', '~assets/fonts/Graphik-400-Regular', 400, regular);
-@include font-face('Graphik500Medium', '~assets/fonts/Graphik-500-Medium', 500, null);
-@include font-face('Graphik600Semibold', '~assets/fonts/Graphik-600-Semibold', 600, semibold);
+@include font-face('ButlerRegular', '~assets/fonts/Butler-Regular', 400, regular);
+@include font-face('Graphik400Regular', '~assets/fonts/Graphik-Regular', 400, regular);
+@include font-face('Graphik500Medium', '~assets/fonts/Graphik-Medium', 500, null);
+@include font-face('Graphik600Semibold', '~assets/fonts/Graphik-Semibold', 600, semibold);

@@ -1,0 +1,50 @@
+.project-selector__container {
+  margin-top: 1rem;
+  border: 4px solid $black;
+  border-radius: $base-radius;
+}
+
+.project-selector__link {
+  display: block;
+  color: $white;
+  text-decoration: none;
+  padding-left: var(--space-mdx);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  // border-left: 4px solid $black;
+  // border-right: 4px solid $black;
+  // border-bottom: 4px solid $black;
+  // border-radius: $base-radius;
+  transition: max-height opacity .3s ease-in-out;
+  overflow: hidden;
+
+  .project-selector__subtitle {
+    font-family: $g-semibold;
+    font-size: var(--space-sm);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-height: 0;
+    opacity: 0;
+  }
+
+  &--selected.project-selector__link {
+    padding-top: var(--space-lg);
+    padding-bottom: 1rem;
+  }
+
+  &--selected .project-selector__subtitle {
+    max-height: 24px; // text size
+    opacity: 1;
+  }
+}
+
+.project-selector__name {
+  font-family: $b-regular;
+  font-size: var(--space-md);
+}
+
+.project-selector__color--red { background-color: hsl(356, 75%, 31%) }
+.project-selector__color--blue { background-color: hsl(207, 51%, 20%) }
+.project-selector__color--yellow { background-color: hsl(49, 96%, 43%) }
+.project-selector__color--white-red { background-color: hsl(358, 36%, 72%) }

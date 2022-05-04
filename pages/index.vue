@@ -19,7 +19,7 @@ export default {
 
 .projects__container {
   display: grid;
-  grid-template-columns: 20% 1fr 20%;
+  grid-template-columns: 150px 1fr 20%;
   grid-template-rows: 1fr 80%;
   grid-column-gap: $column-gap;
   grid-row-gap: $column-gap;
