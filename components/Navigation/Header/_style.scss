@@ -9,6 +9,8 @@
 
   @include mq($until: 'tablet') {
     grid-template-columns: 65px 1fr;
+    padding: var(--space-xs);
+    padding-bottom: 0;
   }
 }
 

@@ -4,6 +4,10 @@
   padding: var(--space-sm);
   height: 100%;
 
+  @include mq($until: 'tablet') {
+    padding: 0;
+  }
+
   &:before {
     content: '';
     position: absolute;
