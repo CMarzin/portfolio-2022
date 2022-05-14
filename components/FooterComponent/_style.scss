@@ -5,17 +5,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
+
+  @include mq($from: 'wide') {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
 
   a {
     color: $white;
   }
 }
 
-.footer__mail {
-  color: $white;
-}
+.footer__mail { color: $white; }
 
 .footer__thanks {
   display: flex;

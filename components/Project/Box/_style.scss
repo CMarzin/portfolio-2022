@@ -7,7 +7,9 @@
   font-family: $j-bold;
   font-size: calc(3 * var(--space-unit)); // 58px
   line-height: calc(3.75 * var(--space-unit)); // 60px
-  margin-top: var(--space-sm);
+  @include mq($from: 'wide') {
+    margin-top: var(--space-sm);
+  }
 }
 
 .project-box__subtitle {

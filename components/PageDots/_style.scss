@@ -1,40 +1,39 @@
-.dots {
-  list-style-type:none;
-  background:white;
-  filter: blur(5px) contrast(10);
-  padding: 0;
-  margin: 0;
-  margin-left: -10px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-  position:relative;
+.project-dots {
+  display: flex;
+  align-items: center;
 }
 
-.dot {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius:100%;
-  width: 16px;
-  height: 16px;
-  background:black;
-  margin-left: 8px;
-  margin-right: 8px;
-  cursor: pointer;
-  color:white;
+.project-dot__container {
+  display: flex;
+  align-items: center;
   position: relative;
-  z-index: 2;
+  margin-left: var(--space-xs);
+
+  .project-dot__container:first-child {
+    margin-left: 0;
+  }
 }
 
-.select {
-  display:block;
-  border-radius:100%;
-  width: 26px;
-  height: 26px;
-  background:black;
-  position: absolute;
-  z-index: 3;
-  top: 15px;
-  left: 0px;
-  pointer-events: none;
+.project-dot__number {
+  font-family: $g-semibold;
+  font-size: var(--space-sm);
+}
+
+.project-dot--selected {
+  display: block;
+  width: 24px;
+  height: 8px;
+  background-color: $black;
+  border-radius: 25%;
+  margin-left: var(--space-xs);
+}
+
+.project-dot {
+  display: block;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  background-color: $black;
+  opacity: .25;
+  border-radius: 50%;
 }

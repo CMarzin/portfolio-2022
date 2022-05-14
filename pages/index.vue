@@ -20,9 +20,13 @@ export default {
 .projects__container {
   display: grid;
   grid-template-columns: 150px 1fr 20%;
-  grid-template-rows: 1fr 80%;
+  grid-template-rows: 1fr 90%;
   grid-column-gap: $column-gap;
   grid-row-gap: $column-gap;
+
+  @include mq($from: 'wide') {
+    grid-template-rows: 1fr 80%;
+  }
 
   .projects__grid-part {
     background-color: $black;
@@ -34,8 +38,18 @@ export default {
 }
 
 .projects__grid-project-box {
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+
+  @include mq($from: 'mobile', $until: 'wide') {
+    padding-top: var(--space-mdx);
+    padding-bottom: var(--space-mdx);
+  }
+
+  @include mq($from: 'wide') {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
 }
 
 .projects__container .projects__grid-part-1 { background-color: $white-90; }
