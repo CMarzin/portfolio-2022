@@ -24,6 +24,10 @@
 
 .default-layout__main-container {
   display: grid;
+
+  @include mq($until: 'mobile-lg') {
+    order: 2;
+  }
 }
 
 .default-layout__container {
@@ -36,6 +40,17 @@
   grid-row-gap: $column-gap;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--currentGlobalColor);
+
+  @include mq($until: 'mobile-lg') {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 1fr auto;
+  }
+}
+
+.default-layout__footer-mobile {
+  order: 3;
 }
 
 .default-layout__aside {
@@ -45,6 +60,10 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 8%;
   grid-column-gap: $column-gap;
   grid-row-gap: $column-gap;
+
+  @include mq($until: 'mobile-lg') {
+    order: 1;
+  }
 
   .default-layout__aside-box {
     background-color: $black;

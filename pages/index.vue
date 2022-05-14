@@ -28,6 +28,12 @@ export default {
     grid-template-rows: 1fr 80%;
   }
 
+  @include mq($until: 'mobile-lg') {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 0;
+  }
+
   .projects__grid-part {
     background-color: $black;
     outline-style: solid;
@@ -58,6 +64,10 @@ export default {
 .projects__container .projects__grid-part-3,
 .projects__container .projects__grid-part-4 {
   background-color: $background-grid;
+
+  @include mq($until: 'mobile-lg') {
+    display: none;
+  }
 }
 
 .projects__grid-part-1 { grid-area: 2 / 1 / 3 / 4; } // Project Box

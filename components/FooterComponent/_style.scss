@@ -11,12 +11,24 @@
     padding-right: var(--space-md);
   }
 
+  @include mq($until: 'mobile-lg') {
+    background-color: $black;
+    flex-direction: column;
+    padding: var(--space-unit);
+  }
+
   a {
     color: $white;
   }
 }
 
-.footer__mail { color: $white; }
+.footer__mail {
+  color: $white;
+
+  @include mq($until: 'mobile-lg') {
+    display: none;
+  }
+}
 
 .footer__thanks {
   display: flex;
@@ -24,6 +36,10 @@
   align-items: center;
   color: $white;
   opacity: .5;
+
+  @include mq($until: 'mobile-lg') {
+    padding-top: var(--space-xs);
+  }
 }
 
 .footer__thanks-heart {

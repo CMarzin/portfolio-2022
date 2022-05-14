@@ -1,3 +1,8 @@
 export default () => ({
-  menuState: 'closed'
+  menuState: 'closed',
+  isMobile: false,
+  isMobileLg: false,
+  isTablet: false,
+  isDesktop: false,
+  isWide: false,
 })

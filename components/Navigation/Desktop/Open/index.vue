@@ -24,4 +24,4 @@
   }
 </script>
 
-<style src="./_style.scss" lang="scss"></style>
+<style src="./_style.scss" lang="scss" scoped></style>

@@ -8,9 +8,9 @@
   grid-row-gap: 0px;
 
   @include mq($until: 'tablet') {
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: $header-mobile-size 1fr;
     padding: var(--space-xs);
-    padding-bottom: 0;
+    background-color: $black;
   }
 }
 
@@ -36,6 +36,8 @@
   padding: $header-padding;
 
   @include mq($until: 'tablet') {
+    display: flex;
+    align-items: center;
     padding: var(--space-xs);
   }
 

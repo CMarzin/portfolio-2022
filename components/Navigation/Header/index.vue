@@ -17,11 +17,12 @@
   export default {
     computed: {
       ...mapGetters({
-        menuState: 'ui/getMenuState'
+        menuState: 'ui/getMenuState',
+        mediaSize: 'ui/getCurrentMediaSize'
       }),
       currentMenuComponent () {
         if (process.browser) {
-          const display = this.$helpers.isMobile() ? 'Mobile' : 'Desktop'
+          const display = this.mediaSize('Mobile') ? 'Mobile' : 'Desktop'
           return this.menuState === 'closed' ? `Navigation${display}Closed` : `Navigation${display}Open`
         } else {
           return this.menuState === 'closed' ? 'NavigationDesktopClosed' : 'NavigationDesktopOpen'
