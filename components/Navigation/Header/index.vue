@@ -22,7 +22,7 @@
       }),
       currentMenuComponent () {
         if (process.browser) {
-          const display = this.mediaSize('Mobile') ? 'Mobile' : 'Desktop'
+          const display = this.mediaSize('MobileLg') ? 'Mobile' : 'Desktop'
           return this.menuState === 'closed' ? `Navigation${display}Closed` : `Navigation${display}Open`
         } else {
           return this.menuState === 'closed' ? 'NavigationDesktopClosed' : 'NavigationDesktopOpen'

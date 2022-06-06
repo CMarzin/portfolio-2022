@@ -1,8 +1,8 @@
 <template>
-  <ul class="navigation-header__nav-items">
+  <ul v-if="menuState === 'open'" class="navigation-header__nav-items">
     <li v-for="(item, index) in items" :key="`${item.name}-${index}`" class="navigation-header__nav-item">
 
-      <button v-if="item.submenu" type="button" class="navigation-header__nav-submenu-button">{{ $t(item.name) }}</button>
+      <span v-if="item.submenu" type="button" class="navigation-header__nav-submenu-button">{{ $t(item.name) }}</span>
 
       <ul v-if="item.submenu" class="navigation-header__nav-submenu-content">
         <li v-for="(subItem, subIndex) in item.sublevel" :key="`${subItem.name}-${subIndex}`" class="navigation-header__nav-item navigation-header__nav-sub-item">
@@ -17,7 +17,9 @@
 </template>
 
 <script>
+  import NavigationHeaderMixins from '~/mixins/NavigationHeader'
   export default {
+    mixins: [NavigationHeaderMixins],
     props: {
       items: {
         type: Array,
@@ -27,4 +29,4 @@
   }
 </script>
 
-<style src="./_style.scss" lang="scss"></style>
+<style scoped src="./_style.scss" lang="scss"></style>

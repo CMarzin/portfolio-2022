@@ -1,23 +1,45 @@
 .navigation-header__right--open {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 35px;
+  grid-column-gap: 4px;
   color: $white;
-  background: $black-90;
-  border: 2px solid $white;
-  border-radius: $base-radius;
 }
 
 .navigation-header__nav-close-button {
   display: flex;
-  padding-right: var(--space-md);
   text-transform: uppercase;
-  font-family: $g-semibold;
+  font-family: "Graphik600Semibold";
   letter-spacing: 4px;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 4px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.navigation-header__nav-close-button svg {
+  width: 10px;
+  height: 10px;
 }
 
 .navigation-header__nav-close-button-text {
   margin-right: var(--space-sm);
+}
+
+.navigation-header__nav-text {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $g-medium;
+  font-size: var(--space-sm);
+  line-height: var(--space-mdx);
 }

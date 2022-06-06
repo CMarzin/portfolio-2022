@@ -1,6 +1,10 @@
 <template>
   <nav class="navigation-header__right--open">
 
+      <nav class="navigation-header__nav-text">
+        Menu
+      </nav>
+
     <div class="navigation-header__nav-close-button" @click="toggleMenu">
       <svg-close-menu />
     </div>

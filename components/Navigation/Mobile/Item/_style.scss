@@ -23,12 +23,15 @@
 .navigation-header__nav-item {
   list-style: none;
   font-family: $g-regular;
-  margin-left: var(--space-mdx);
   padding: 13px 0; // 13px to match the size of the header
 }
 
 .navigation-header__nav-items .navigation-header__nav-item:first-child {
   margin-left: 0;
+}
+
+.navigation-header__nav-items .navigation-header__nav-submenu-content .navigation-header__nav-item {
+  margin-left: var(--space-mdx);
 }
 
 .navigation-header__nav-item-link {
@@ -39,37 +42,18 @@
   padding: 19.5px var(--space-lg); // 39px + 19.5px = size of the header
   border-radius: $base-radius;
   transition: background-color ease .2s;
-
-  &:hover:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $black-90;
-    border-radius: $base-radius;
-  }
 }
 
-.navigation-header__nav-item-link.nuxt-link-exact-active {
-
-  &:hover:before {
-    left: calc(50% + 8px);
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    background-color: $yellow;
-    border-radius: 50%;
-  }
+.navigation-header__nav-item-link.nuxt-link-exact-active:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: $yellow;
+  border-radius: 50%;
 }
 
 .navigation-header__nav-submenu-button {
@@ -78,25 +62,5 @@
   color: $white;
   cursor: pointer;
   font-family: $g-regular;
-}
-
-/*******************************
-* Sub-menu Style
-********************************/
-
-.navigation-header__nav-submenu-content {
-  display: none;
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  top: calc(#{$header-size} - 3px); // to pass beneath the main menu border
-
-  border: 2px solid $white;
-  border-top: none;
-  border-bottom-left-radius: $base-radius;
-  border-bottom-right-radius: $base-radius;
-}
-
-.navigation-header__nav-items .navigation-header__nav-item:hover > .navigation-header__nav-submenu-content {
-  display: flex;
+  padding: 19.5px var(--space-lg)
 }
