@@ -1,0 +1,90 @@
+.about-content__container {
+	padding-top: 58px;
+	padding-left: 58px;
+	padding-bottom: 58px;
+}
+
+.about-content__title {
+	font-family: $j-bold;
+	font-size: 49px;
+	line-height: 60px;
+	letter-spacing: -1px;
+}
+
+.about-content__subtitle {
+	font-family: $g-semibold;
+	font-size: var(--space-sm);
+	line-height: var(--space-mdx);
+	text-transform: uppercase;
+	letter-spacing: 8px;
+
+	&--red {
+		color: hsl(0, 79%, 63%);
+	}
+}
+
+.about-content__description-technology-wrapper {
+	list-style: disc;
+	padding-left: var(--space-lg);
+}
+
+.about-content__margin-top {
+	margin-top: var(--space-unit);
+}
+
+.about-content__text {
+	font-family: $g-regular;
+	font-size: var(--space-unit);
+	line-height: var(--space-mdx);
+	letter-spacing: -0.5px;
+}
+
+.about-content__experience-time {
+	font-family: $g-semibold;
+	font-size: var(--space-unit);
+	line-height: var(--space-mdx);
+	letter-spacing: 2px;
+}
+
+.about-content__text a {
+	color: $black;
+}
+
+.about-content__experience-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-content__experience {
+	width: 50%;
+	margin-top: var(--space-lg);
+}
+
+.about-content__experience-wrapper .about-content__experience:first-child,
+.about-content__experience-wrapper .about-content__experience:nth-child(2) {
+	margin-top: var(--space-unit);
+}
+
+.about-content__experience-company {
+	font-family: $j-bold;
+	font-size: var(--space-unit);
+	line-height: var(--space-mdx);
+	color: $black;
+}
+
+.about-content__experience-places,
+.about-content__experience-desc {
+	font-family: $g-regular;
+	font-size: var(--space-unit);
+	letter-spacing: -0.5px;
+
+	&--blue {
+		color: hsla(217, 100%, 53%, 0.95);
+	}
+	&--red {
+		color: hsla(354, 96%, 57%, 0.95);
+	}
+	&--yellow {
+		color: hsla(41, 100%, 59%, 1);
+	}
+}

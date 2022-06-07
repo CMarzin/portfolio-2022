@@ -1,12 +1,12 @@
 <template>
   <div>
-    a propos
+    <about-content></about-content>
   </div>
 </template>
 
 <script>
   export default {
-    
+    layout: 'about'
   }
 </script>
 

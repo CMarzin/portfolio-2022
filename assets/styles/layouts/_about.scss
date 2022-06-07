@@ -1,0 +1,80 @@
+.about-layout {
+  position: relative;
+  background-color: $black;
+  padding: var(--space-sm);
+  height: 100%;
+
+  @include mq($until: 'tablet') {
+    padding: 0;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('@/assets/images/Noise-big-720.png');
+    mix-blend-mode: hard-light;
+    opacity: 0.35;
+    z-index: -1;
+  }
+}
+
+.about-layout__main-container {
+  display: grid;
+
+  @include mq($until: 'mobile-lg') {
+    order: 2;
+  }
+}
+
+.about-layout__container {
+  display: grid;
+  min-height: calc(100% - (#{$header-size} + var(--space-sm)));
+  margin-top: var(--space-sm);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: $column-gap;
+  grid-row-gap: $column-gap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $white;
+
+  @include mq($until: 'mobile-lg') {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 1fr auto;
+  }
+}
+
+.about-layout__footer-mobile {
+  order: 3;
+}
+
+.about-layout__aside {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8%;
+  grid-row-gap: $column-gap;
+
+  @include mq($until: 'mobile-lg') {
+    order: 1;
+  }
+
+  .about-layout__aside-box {
+    background-color: $black;
+    outline-style: solid;
+    outline-color: $black;
+    outline-width: $column-gap;
+    border-radius: $base-radius;
+  }
+}
+
+.about-layout__image {
+	height: 100%;
+  object-fit: cover;
+	aspect-ratio: 16/9;
+}

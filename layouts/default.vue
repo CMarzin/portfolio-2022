@@ -32,51 +32,10 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
-import navigationItems from '~/static/data/navigationItems'
+  import LayoutsMixins from '~/mixins/Layouts'
   export default {
-    data() {
-      return {
-        isMobileLg: true,
-        isTablet: false,
-        isDesktop: false,
-        navigationItems
-      }
-    },
-    computed: {
-      bgImg () {
-        return require('@/assets/images/image-bg.jpg')
-      }
-    },
-    mounted () {
-      this.setSize()
-
-      this.$nextTick(() => {
-        this.onResize()
-      })
-
-      window.addEventListener('resize', this.onResize)
-    },
-    methods: {
-      ...mapMutations({
-        setCurrentMediaSize: 'ui/setCurrentMediaSize'
-      }),
-      setSize () {
-        const mediaList = ['MobileLg', 'Desktop', 'Tablet']
-        this.isMobileLg = this.$helpers.isMobileLg()
-        this.isDesktop = this.$helpers.isDesktop()
-        this.isTablet = this.$helpers.isTablet()
-
-        for (let index = 0; index < mediaList.length; index++) {
-          const media = mediaList[index];
-          this.setCurrentMediaSize({media, value: this[`is${media}`]})
-        }
-      },
-      onResize() {
-        this.setSize()
-      }
-    }
+    mixins: [LayoutsMixins],
   }
 </script>
 
-<style src="@/layouts/_default.scss" scoped lang="scss"></style>
+<style src="@/assets/styles/layouts/_about.scss" scoped lang="scss"></style>
