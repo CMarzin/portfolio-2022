@@ -1,7 +1,9 @@
 .about-content__container {
-	padding-top: 58px;
-	padding-left: 58px;
-	padding-bottom: 58px;
+	padding: 58px;
+
+	@include mq($until: 'mobile-lg') {
+		padding: var(--space-unit);
+	}
 }
 
 .about-content__title {
@@ -9,6 +11,11 @@
 	font-size: 49px;
 	line-height: 60px;
 	letter-spacing: -1px;
+
+	@include mq($until: 'mobile-lg') {
+		font-size: 32px;
+		line-height: 48px;
+	}
 }
 
 .about-content__subtitle {
@@ -17,6 +24,10 @@
 	line-height: var(--space-mdx);
 	text-transform: uppercase;
 	letter-spacing: 8px;
+
+	@include mq($until: 'mobile-lg') {
+		letter-spacing: 2px;
+	}
 
 	&--red {
 		color: hsl(0, 79%, 63%);
@@ -58,6 +69,10 @@
 .about-content__experience {
 	width: 50%;
 	margin-top: var(--space-lg);
+
+	@include mq($until: 'mobile-lg') {
+		width: 100%;
+	}
 }
 
 .about-content__experience-wrapper .about-content__experience:first-child,
@@ -66,10 +81,12 @@
 }
 
 .about-content__experience-company {
+	display: block;
 	font-family: $j-bold;
 	font-size: var(--space-unit);
 	line-height: var(--space-mdx);
 	color: $black;
+	margin-top: var(--space-xs);
 }
 
 .about-content__experience-places,

@@ -1,4 +1,4 @@
-import { mapMutations } from 'vuex'
+import { mapMutations, mapGetters } from 'vuex'
 import navigationItems from '~/static/data/navigationItems'
 export default {
 	data() {
@@ -12,7 +12,10 @@ export default {
 	computed: {
 		bgImg () {
 			return require('@/assets/images/image-bg.jpg')
-		}
+		},
+		...mapGetters({
+      menuState: 'ui/getMenuState'
+    })
 	},
 	mounted () {
 		this.setSize()

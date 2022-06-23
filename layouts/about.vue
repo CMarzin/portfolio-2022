@@ -1,5 +1,8 @@
 <template>
   <div class="about-layout">
+
+    <backdrop :class="`backdrop backdrop--${menuState}`"/>
+
     <navigation-header />
 
     <navigation-mobile-item v-show="isTablet" :items="navigationItems" />

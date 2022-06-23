@@ -2,7 +2,6 @@
   position: relative;
   background-color: $black;
   padding: var(--space-sm);
-  height: 100%;
 
   @include mq($until: 'tablet') {
     padding: 0;
@@ -24,6 +23,10 @@
 
 .about-layout__main-container {
   display: grid;
+  outline-style: solid;
+  outline-color: $black;
+  outline-width: $column-gap;
+  border-radius: $base-radius;
 
   @include mq($until: 'mobile-lg') {
     order: 2;
@@ -45,7 +48,7 @@
   @include mq($until: 'mobile-lg') {
     margin-top: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh 1fr auto;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -77,4 +80,8 @@
 	height: 100%;
   object-fit: cover;
 	aspect-ratio: 16/9;
+  outline-style: solid;
+  outline-color: $black;
+  outline-width: $column-gap;
+  border-radius: $base-radius;
 }

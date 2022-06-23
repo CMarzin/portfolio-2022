@@ -1,5 +1,8 @@
 <template>
   <div class="default-layout">
+
+    <backdrop :class="`backdrop backdrop--${menuState}`"/>
+
     <navigation-header />
 
     <navigation-mobile-item v-show="isTablet" :items="navigationItems" />
@@ -38,4 +41,4 @@
   }
 </script>
 
-<style src="@/assets/styles/layouts/_about.scss" scoped lang="scss"></style>
+<style src="@/assets/styles/layouts/_default.scss" scoped lang="scss"></style>

@@ -1,0 +1,10 @@
+.backdrop {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: all .3s ease;
+}
+
+.backdrop--open {
+	background-color: hsl(0, 0%, 0%, 0.5);
+}

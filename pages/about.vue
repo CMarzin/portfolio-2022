@@ -1,15 +1,9 @@
 <template>
-  <div>
-    <about-content></about-content>
-  </div>
+  <about-content />
 </template>
 
 <script>
   export default {
-    layout: 'about'
+    layout: 'about',
   }
 </script>
-
-<style scoped>
-
-</style>
