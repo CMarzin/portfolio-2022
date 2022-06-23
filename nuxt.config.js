@@ -5,11 +5,15 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  router: {
+    middleware: 'beforeRouteLeave'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'folio',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'fr',
     },
     meta: [
       { charset: 'utf-8' },
