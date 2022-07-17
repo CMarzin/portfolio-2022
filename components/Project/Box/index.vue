@@ -3,12 +3,12 @@
 
     <page-dots />
 
-    <h1 class="project-box__title">Cher Ami</h1>
-    <h2 class="project-box__subtitle">WEBSITE & FOLIO</h2>
+    <h1 class="project-box__title">{{ projectData.title }}</h1>
+    <h2 class="project-box__subtitle">{{ projectData.projectType }}</h2>
 
-    <custom-button custom-class="project-box__project-button" />
+    <custom-link custom-class="project-box__project-button" :link="projectData.localUrl" />
 
-    <p class="project-box__description">During 3 months, I had my internship at Cher Ami in Lyon. My first project consisted of making some changes on several pages of their website (about/contact). During 3 months, I had my internship at Cher Ami in Lyon.</p>
+    <p class="project-box__description">{{ projectData.shortDescription }}</p>
 
     <h2 class="project-box__subtitle project-box__subtitle-projects">{{ $t('OTHER PROJECTS') }}</h2>
 
@@ -21,7 +21,16 @@
     props: {
       projectData: {
         type: Object,
-        default: () => {}
+        default: () => ({
+          title: 'YSF',
+          projectType: 'Agency website',
+          date: '',
+          externalUrl: 'https://ysf-preprod.herokuapp.com/',
+          localUrl: '/ysf',
+          background: 'ysf.png',
+          shortDescription: 'Création d\'un site d\'agence web pour des copains de promotions.',
+          stack: '',
+        }),
       },
     },
   }

@@ -1,0 +1,17 @@
+.custom-link {
+  display: flex;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+
+  &:hover {
+    border: 0;
+    background: none;
+  }
+}
+
+.custom-link__text {
+  font-family: $g-semibold;
+  margin-left: var(--space-sm);
+}

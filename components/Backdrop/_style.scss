@@ -8,3 +8,7 @@
 .backdrop--open {
 	background-color: hsl(0, 0%, 0%, 0.5);
 }
+
+.backdrop--closed {
+	z-index: -1;
+}
