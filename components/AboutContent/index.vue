@@ -8,48 +8,47 @@
 		<p class="about-content__subtitle">( {{ $t('But you can call me') }} <span class="about-content__subtitle--red">coco</span> )</p>
 
 		<div class="about-content__description about-content__margin-top">
-			<p class="about-content__text">Je suis un développeur Front-end, spécialisé dans les performances web avec une appétence pour les animations et l’expérience utilisateur.</p>
-			<p class="about-content__text about-content__margin-top">Je suis diplômé de la promotion 2019 de l’école HETIC à Montreuil.</p>
-			<p class="about-content__text">Je suis un grand passionné du web et de la technologie en général.</p>
-			<p class="about-content__text">Grâce à mes études, mes stages et mon expérience professionnel. Je suis plus à même de comprendre les enjeux et problèmes de mes collègues afin de trouver les meilleurs solutions en un temps donnée.</p>
-			<p class="about-content__text">Je suis à l’aise avec les fondamentaux du web tel que le HTML, CSS et le JS.</p>
-			<p class="about-content__text about-content__margin-top">Listes des technologies que j’utilise ou que j’ai utilisé :</p>
-			<ul class="about-content__description-technology-wrapper ">
-				<li class="about-content__description-technology">ES6, NUXT et VUEJS</li>
-				<li class="about-content__description-technology">SASS et BEM</li>
-				<li class="about-content__description-technology">Gulp, Webpack et Vite</li>
-				<li class="about-content__description-technology">Lighthouse, Bundlephobia, WebPageTest</li>
-				<li class="about-content__description-technology">Magento 2, Wordpress, PHP</li>
+			<p class="about-content__text">{{ $t('I am a French Front-end Developer 🇫🇷, specialized in web performance with some skills for the animation and UX.') }}</p>
+			<p class="about-content__text about-content__margin-top">{{ $t('I am a 2019 graduate of the HETIC school in Montreuil.')}}</p>
+
+			<p class="about-content__text about-content__margin-top">{{ $t('Technologies I use daily or used to') }}</p>
+			<ul
+				v-for="(technology, index) in technologiesUsed"
+				:key="`${technology}-${index}`"
+				class="about-content__description-technology-wrapper">
+					<li class="about-content__description-technology">{{ technology }}</li>
 			</ul>
 		</div>
 
-		<h2 class="about-content__subtitle about-content__margin-top">{{ $t('Experience') }}</h2>
+		<h2 class="about-content__subtitle about-content__margin-top">{{ $t('Experiences') }}</h2>
 
 		<div class="about-content__experience-wrapper">
 			<div v-for="(experience, index) in experiences" :key="`${experience.companyName}-${index}`" class="about-content__experience">
-				<div class="about-content__experience-time"><time>{{ experience.startTime }}</time> - <time>{{ experience.endTime }}</time></div>
+				<div class="about-content__experience-time"><time>{{ $t(experience.startTime) }}</time> - <time>{{ $t(experience.endTime) }}</time></div>
 				<a :href="experience.companyWebsite" class="about-content__experience-company">{{ experience.companyName }}</a>
 				<p :class="`about-content__experience-places about-content__experience-places--${experience.color}`">{{ experience.places }}</p>
-				<p class="about-content__experience-desc">{{ experience.desc }}</p>
+				<p class="about-content__experience-desc">{{ $t(experience.desc) }}</p>
 			</div>
 		</div>
 
 		<h2 class="about-content__subtitle about-content__margin-top">{{ $t('Hobbies') }}</h2>
 
-		<p class="about-content__text about-content__margin-top">J’ai un blog ou je poste toutes ma veille digital :  <a href="https://cocoweb.fr/">https://cocoweb.fr/</a></p>
-		<p class="about-content__text about-content__margin-top">Vous pouvez retrouver mon profil Github ici :  <a href="https://github.com/CMarzin">https://github.com/CMarzin</a></p>
-		<p class="about-content__text about-content__margin-top">Vous pouvez retrouver toutes mes photos sur mon profil unsplash : <a href="https://unsplash.com/@marzin_corentin">https://unsplash.com/@marzin_corentin</a></p>
-		<p class="about-content__text about-content__margin-top">Je suis un grand sportif, fan de VTT et de vélo en général. J’aime beaucoup le bricolage et la moto.</p>
-		<p class="about-content__text about-content__margin-top">Si vous voulez plus d’informations ou juste pour me dire bonjour vous pouvez m’envoyer un email ici : <a href="mailto:corentinmarzin@free.fr">corentinmarzin@free.fr</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('I got a blog where I put all stuff related to Front-end development :')}} <a href="https://cocoweb.fr/">https://cocoweb.fr/</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('You can find my Github here :')}} <a href="https://github.com/CMarzin">https://github.com/CMarzin</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('You can find all my photographyon my unsplash profile :')}} <a href="https://unsplash.com/@marzin_corentin">https://unsplash.com/@marzin_corentin</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('I really love sport, big fan of mountain bike and biking in general. I also love DIY and riding motorcycle.')}}</p>
+		<p class="about-content__text about-content__margin-top">{{ $t('If you want more information or just to say hello you can send me an email here :') }} <a href="mailto:corentinmarzin@free.fr">corentinmarzin@free.fr</a></p>
 	</div>
 </template>
 
 <script>
-	import { experiences } from './data'
+	import { experiences, technologiesUsed } from '~/static/data/index'
 	export default {
+		name: 'AboutContent',
 		data() {
 			return {
-				experiences
+				experiences,
+				technologiesUsed
 			}
 		},
 	}

@@ -11,7 +11,7 @@ export default [
     sublevel: [
       {
         name: 'Orange',
-        url: '/projects/Orange'
+        url: '/projects/orange'
       },
       {
         name: 'YSF',

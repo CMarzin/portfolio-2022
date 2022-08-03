@@ -1,4 +1,4 @@
-export const experiences = [
+const experiences = [
 	{
 		startTime: 'September 2022',
 		endTime: 'Today',
@@ -6,7 +6,7 @@ export const experiences = [
 		companyWebsite: 'Qairn',
 		places: '🇫🇷 Paris, France',
 		color: 'blue',
-		desc: 'Full time Front-end developper'
+		desc: 'Full time, Front-end developper'
 	},
 	{
 		startTime: 'January 2020',
@@ -15,7 +15,7 @@ export const experiences = [
 		companyWebsite: 'Colorz - Groupe Davidson Consulting',
 		places: '🇫🇷 Paris, France',
 		color: 'blue',
-		desc: 'Full time Front-end developper'
+		desc: 'Full time, Front-end developper'
 	},
 	{
 		startTime: 'January 2019',
@@ -24,7 +24,7 @@ export const experiences = [
 		companyWebsite: 'Allegro Musique',
 		places: '🇫🇷 Clichy, France',
 		color: 'blue',
-		desc: 'Sandwich courses Full-Stack developper'
+		desc: 'Sandwich courses, Full-Stack developper'
 	},
 	{
 		startTime: 'July 2018',
@@ -33,7 +33,7 @@ export const experiences = [
 		companyWebsite: 'Leeroy Digital Agency',
 		places: '🇨🇦 Montréal, Canada',
 		color: 'yellow',
-		desc: 'Training courses Full-Stack developper'
+		desc: 'Training courses, Full-Stack developper'
 	},
 	{
 		startTime: 'July 2017',
@@ -42,7 +42,7 @@ export const experiences = [
 		companyWebsite: 'Edenspiekermann',
 		places: '🇩🇪 Berlin, Allemagne',
 		color: 'red',
-		desc: 'Training courses Full-Stack developper'
+		desc: 'Training courses, Full-Stack developper'
 	},
 	{
 		startTime: 'July 2016',
@@ -51,6 +51,20 @@ export const experiences = [
 		companyWebsite: 'Cher Ami',
 		places: '🇫🇷 Lyon, France',
 		color: 'blue',
-		desc: 'Training courses Front-end developper'
+		desc: 'Training courses, Front-end developper'
 	},
 ]
+
+const technologiesUsed = [
+	'HTML, CSS, ES6, NODE, PHP',
+	'NUXT, VUEJS',
+	'SASS, TAILWIND CSS, BOOTSTRAP, BEM, CUBE CSS',
+	'GULP, WEBPACK, VITE',
+	'LIGThouse, Bundlephobia, WebPageTest',
+	'Magento 2, Shopify, Storyblok, Wordpress'
+]
+
+export {
+	experiences,
+	technologiesUsed
+}

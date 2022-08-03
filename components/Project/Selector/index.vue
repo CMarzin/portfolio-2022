@@ -1,9 +1,9 @@
 <template>
   <ul class="project-selector__container" @mouseleave="setHoveredProject(projects[0])">
-    <li v-for="(project, index) in projects" :key="project.subtitle + index">
-      <a href="" :class="['project-selector__link', project.hovered ? 'project-selector__link--selected' : '', `project-selector__color--${project.color}`]" @mouseover="setHoveredProject(project)">
-        <p class="project-selector__name">{{ project.name }}</p>
-        <p class="project-selector__subtitle">{{ project.subtitle }}</p>
+    <li v-for="({hovered, url, color, name, subtitle}, index) in projects" :key="subtitle + index">
+      <a :href="url" :class="['project-selector__link', hovered ? 'project-selector__link--selected' : '', `project-selector__color--${color}`]" @mouseover="setHoveredProject(projects[index])">
+        <p class="project-selector__name">{{ name }}</p>
+        <p class="project-selector__subtitle">{{ subtitle }}</p>
       </a>
     </li>
   </ul>
@@ -18,25 +18,29 @@
             name: 'Allegro musique',
             subtitle: 'Web performance',
             color: 'red',
-            hovered: true
+            hovered: true,
+            url: '/projects/allegro-musique',
           },
           {
             name: 'YSF',
             subtitle: 'Agency website',
             color: 'blue',
-            hovered: false
+            hovered: false,
+            url: '/projects/ysf',
           },
           {
             name: 'Orange',
             subtitle: 'E-commerce',
             color: 'yellow',
-            hovered: false
+            hovered: false,
+            url: '/projects/orange',
           },
           {
             name: 'Archives',
             subtitle: 'Autre',
             color: 'white-red',
-            hovered: false
+            hovered: false,
+            url: '/projects/archives',
           }
         ]
       }
