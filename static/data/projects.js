@@ -9,6 +9,7 @@ export default [
 		projectLink: 'https://ysf-preprod.herokuapp.com/',
 		shortDescription: 'Création d\'un site d\'agence web pour des copains de promotions.',
 		stack: '',
+		color: 'white-90'
 	},
 	{
 		title: 'Allegro Musique',
@@ -19,6 +20,7 @@ export default [
 		background: 'allegro.jpg',
 		shortDescription: 'Audit et mis en place de recommandations des performances web.',
 		stack: '',
+		color: 'yellow'
 	},
 	{
 		title: 'Orange',
@@ -30,6 +32,7 @@ export default [
 		projectLink: 'https://www.orange.lu/fr/',
 		shortDescription: 'Création d’un site e-commerce Magento 2 avec mise en place de micro-service et sous la forme de mini application Vuejs pour améliorer l’expérience utilisateur.',
 		stack: '',
+		color: 'dark-blue'
 	},
 	{
 		title: 'Forss',
@@ -40,5 +43,6 @@ export default [
 		background: '',
 		shortDescription: 'Ce fus mon premier projet en total autonomie en tant que CDI chez Colorz.',
 		stack: '',
+		color: 'red'
 	},
 ]

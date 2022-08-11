@@ -25,12 +25,9 @@
 }
 
 .projects__grid-project-box {
-  padding-top: var(--space-xs);
-  padding-bottom: var(--space-xs);
-
   @include mq($from: 'mobile', $until: 'wide') {
-    padding-top: var(--space-mdx);
-    padding-bottom: var(--space-mdx);
+    // padding-top: var(--space-mdx);
+    // padding-bottom: var(--space-mdx);
   }
 
   @include mq($from: 'wide') {
@@ -39,7 +36,13 @@
   }
 }
 
-.projects__container .projects__grid-part-1 { background-color: $white-90; }
+.projects__container .projects__grid-part-1 {
+  background-color: $white-90;
+
+  @include mq($until: 'mobile-lg') {
+    overflow: hidden;
+  }
+}
 
 .projects__container .projects__grid-part-2,
 .projects__container .projects__grid-part-3,
