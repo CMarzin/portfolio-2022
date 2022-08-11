@@ -40,6 +40,9 @@ export default {
 				const media = mediaList[index];
 				this.setCurrentMediaSize({media, value: this[`is${media}`]})
 			}
+			console.log('mediaSize isMobileLg', this.isMobileLg)
+			console.log('mediaSize isDesktop', this.isDesktop)
+			console.log('mediaSize isTablet', this.isTablet)
 		},
 		onResize() {
 			this.setSize()
