@@ -11,7 +11,7 @@ export default {
   'I am a French Front-end Developer 🇫🇷, specialized in web performance with some skills for the animation and UX.': 'Je suis un développeur Front-end basé en France 🇫🇷, spécialisé dans les performances web avec une appétence pour les animations et l’expérience utilisateur.',
   'I am a 2019 graduate of the HETIC school in Montreuil.': 'Je suis diplômé de la promotion 2019 de l’école HETIC à Montreuil.',
   'I got a blog where I put all stuff related to Front-end development :': 'J\'ai un blog ou je poste toutes ma veille digital :',
-  'Technologies I use daily or used to': 'Listes des technologies que j’utilise ou que j’ai utilisé :',
+  'Technologies I use daily': 'Listes des technologies que j’utilise actuellement :',
   'You can find my Github here :': 'Vous pouvez retrouver mon profil Github ici :',
   'You can find all my photographyon my unsplash profile :': 'Vous pouvez retrouver toutes mes photos sur mon profil unsplash :',
   'I really love sport, big fan of mountain bike and biking in general. I also love DIY and riding motorcycle.': 'Je suis un grand sportif, fan de VTT et de vélo en général. J’aime beaucoup le bricolage et la moto.',

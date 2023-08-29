@@ -79,7 +79,8 @@
 .default-layout__aside .default-layout__aside-part-3,
 .default-layout__aside .default-layout__aside-part-4,
 .default-layout__aside .default-layout__aside-part-5 {
-  background-color: $background-grid;
+  background-color: var(--currentProjectColor);
+  transition: background-color 300ms linear;
 }
 
 .default-layout__aside-part-1 { grid-area: 1 / 2 / 4 / 3; } // Background

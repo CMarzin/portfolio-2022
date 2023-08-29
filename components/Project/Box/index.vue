@@ -1,7 +1,10 @@
 <template>
   <div class="project-box__container">
 
-    <page-dots v-if="!mediaSize('MobileLg')" />
+    <page-dots
+      v-if="!mediaSize('MobileLg')"
+      v-on:update-current-project-to-right="test"
+      v-on:update-current-project-to-left="test" />
 
     <h1 class="project-box__title">{{ projectData.title }}</h1>
     <h2 class="project-box__subtitle">{{ projectData.projectType }}</h2>
@@ -13,7 +16,6 @@
     <h2 class="project-box__subtitle project-box__subtitle-projects">{{ $t('OTHER PROJECTS') }}</h2>
 
     <project-selector />
-
   </div>
 </template>
 
@@ -21,7 +23,6 @@
   import { mapGetters } from 'vuex';
 
   export default {
-
     props: {
       projectData: {
         type: Object,
@@ -42,6 +43,11 @@
         mediaSize: 'ui/getCurrentMediaSize'
       })
     },
+    methods: {
+      test (e) {
+        console.log('e', e)
+      }
+    }
   }
 </script>
 

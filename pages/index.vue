@@ -2,9 +2,7 @@
   <div class="projects__container">
     <div class="projects__grid-part projects__grid-part-1 projects__grid-project-box">
       <project-slider v-if="mediaSize('MobileLg')"></project-slider>
-      <button v-if="!mediaSize('MobileLg')" @click="cycleArray">Left project</button>
-      <button v-if="!mediaSize('MobileLg')" @click="cycleArray('forward')">Right project</button>
-      <project-box v-if="!mediaSize('MobileLg')" :project-data="currentProject" />
+      <project-box v-if="!mediaSize('MobileLg')" :project-data="currentProject" @update-current-projec-to-right="cycleArray('forward')"  @update-current-projec-to-left="cycleArray()"/>
     </div>
     <div class="projects__grid-part projects__grid-part-2"></div>
     <div class="projects__grid-part projects__grid-part-3"></div>
@@ -13,10 +11,22 @@
 </template>
 
 <script>
-  import {mapGetters} from 'vuex'
+  import { mapGetters } from 'vuex'
   import projects from '~/static/data/projects'
   export default {
     name: 'IndexPage',
+    provide () {
+      const currentProject = {}
+
+      Object.defineProperty(currentProject, 'projectNumber',{
+        enumerable: true,
+        get: () => this.currentProjectIndex,
+      })
+
+      return {
+        currentProject,
+      }
+    },
     data() {
       return {
         projectDataBox: projects,
@@ -29,6 +39,18 @@
         mediaSize: 'ui/getCurrentMediaSize'
       }),
     },
+    mounted () {
+      document.addEventListener('keydown', (e) => {
+        switch (e.key) {
+          case 'ArrowRight':
+            this.cycleArray('forward')
+            break;
+          case 'ArrowLeft':
+            this.cycleArray()
+            break;
+        }
+      });
+    },
     methods: {
       cycleArray(direction) {
         if (direction === 'forward') {
@@ -38,6 +60,11 @@
         }
         const index = this.currentProjectIndex % this.projectDataBox.length
         this.currentProject = this.projectDataBox[index]
+        this.currentProjectIndex = index
+
+        const root = document.documentElement;
+
+        root.style.setProperty('--currentProjectColor', this.currentProject.color);
       }
     },
   }

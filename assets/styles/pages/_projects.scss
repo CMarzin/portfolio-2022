@@ -25,11 +25,6 @@
 }
 
 .projects__grid-project-box {
-  @include mq($from: 'mobile', $until: 'wide') {
-    // padding-top: var(--space-mdx);
-    // padding-bottom: var(--space-mdx);
-  }
-
   @include mq($from: 'wide') {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);

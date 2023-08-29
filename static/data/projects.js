@@ -7,7 +7,7 @@ export default [
 		localUrl: '/projects/ysf',
 		background: 'ysf.png',
 		projectLink: 'https://ysf-preprod.herokuapp.com/',
-		shortDescription: 'Création d\'un site d\'agence web pour des copains de promotions.',
+		shortDescription: 'Création d\'un site d\'agence web pour des amies de promotions.',
 		stack: '',
 		color: 'white-90'
 	},
@@ -18,7 +18,7 @@ export default [
 		externalUrl: 'https://www.allegromusique.fr/',
 		localUrl: '/projects/allegro-musique',
 		background: 'allegro.jpg',
-		shortDescription: 'Audit et mis en place de recommandations des performances web.',
+		shortDescription: 'Audit et mises en place de recommandations des performances web.',
 		stack: '',
 		color: 'yellow'
 	},
@@ -30,7 +30,7 @@ export default [
 		localUrl: '/projects/orange',
 		background: 'orange.jpg',
 		projectLink: 'https://www.orange.lu/fr/',
-		shortDescription: 'Création d’un site e-commerce Magento 2 avec mise en place de micro-service et sous la forme de mini application Vuejs pour améliorer l’expérience utilisateur.',
+		shortDescription: 'Création d’un site e-commerce Magento 2 avec mise en place de micro-service. Sous la forme d\'application VUEJS pour améliorer l’expérience utilisateur.',
 		stack: '',
 		color: 'dark-blue'
 	},
@@ -41,7 +41,7 @@ export default [
 		externalUrl: 'https://www.forss-program.com/',
 		localUrl: '/projects/forss',
 		background: '',
-		shortDescription: 'Ce fus mon premier projet en total autonomie en tant que CDI chez Colorz.',
+		shortDescription: 'Utilisation des blocks Gutenberg, développement de filtre et gestion de strate avec ACF',
 		stack: '',
 		color: 'red'
 	},

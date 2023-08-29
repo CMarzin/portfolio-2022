@@ -1,47 +1,24 @@
 <template>
   <ul class="project-dots">
-    <li
-      v-for="(dot, index) in pagination"
-      :key="index"
-      :class="['project-dot__container', dot.selected ? 'project-dot__container--selected' : '']">
-      <span v-if="dot.selected" class="project-dot__number">0{{ index + 1 }}</span>
-      <span v-if="dot.selected" class="project-dot--selected"></span>
-      <span v-if="!dot.selected" class="project-dot"></span>
-    </li>
+    <span @click="$emit('updateCurrentProjecToleft')"><svg-arrow-long-left  /></span>
+    <span class="project-dot__number">0{{ currentProjectNumber + 1 }}</span>
+    <span @click="test"><svg-arrow-long-right  /></span>
   </ul>
 </template>
 
 <script>
   export default {
-    data() {
-      return {
-        pagination: [
-          {
-            name: '',
-            selected: true
-          },
-          {
-            name: '',
-            selected: false
-          },
-          {
-            name: '',
-            selected: false
-          },
-          {
-            name: '',
-            selected: false
-          }
-        ],
-        lastPosition: null,
-        animationframeDots: null
-      }
-    },
+    inject: ['currentProject'],
     computed: {
-      currentDot () {
-        return 0
-      }
+      currentProjectNumber () {
+        return this.currentProject.projectNumber
+      },
     },
+    methods: {
+      test () {
+        this.$emit('updateCurrentProjecToleft')
+      }
+    }
   }
 </script>
 

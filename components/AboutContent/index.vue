@@ -11,7 +11,7 @@
 			<p class="about-content__text">{{ $t('I am a French Front-end Developer 🇫🇷, specialized in web performance with some skills for the animation and UX.') }}</p>
 			<p class="about-content__text about-content__margin-top">{{ $t('I am a 2019 graduate of the HETIC school in Montreuil.')}}</p>
 
-			<p class="about-content__text about-content__margin-top">{{ $t('Technologies I use daily or used to') }}</p>
+			<p class="about-content__text about-content__margin-top">{{ $t('Technologies I use daily') }}</p>
 			<ul
 				v-for="(technology, index) in technologiesUsed"
 				:key="`${technology}-${index}`"
