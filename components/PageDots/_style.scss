@@ -30,11 +30,7 @@
 }
 
 .project-dot {
-  display: block;
   cursor: pointer;
-  width: 8px;
-  height: 8px;
-  background-color: $black;
-  opacity: .25;
-  border-radius: 50%;
+  width: 32px;
+  height: 32px;
 }

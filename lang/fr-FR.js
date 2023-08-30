@@ -1,5 +1,6 @@
 export default {
   home: 'Accueil',
+  about: 'A propos',
   close: 'fermer',
   'ES6, NUXT and VUEJS': 'ES6, NUXT et VUEJS',
   'Hobbies': 'Activitées',

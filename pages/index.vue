@@ -2,7 +2,11 @@
   <div class="projects__container">
     <div class="projects__grid-part projects__grid-part-1 projects__grid-project-box">
       <project-slider v-if="mediaSize('MobileLg')"></project-slider>
-      <project-box v-if="!mediaSize('MobileLg')" :project-data="currentProject" @update-current-projec-to-right="cycleArray('forward')"  @update-current-projec-to-left="cycleArray()"/>
+      <project-box
+        v-if="!mediaSize('MobileLg')"
+        :project-data="currentProject"
+        @updateCurrentProjectToRight="cycleArray('forward')"
+        @updateCurrentProjectToLeft="cycleArray()" />
     </div>
     <div class="projects__grid-part projects__grid-part-2"></div>
     <div class="projects__grid-part projects__grid-part-3"></div>

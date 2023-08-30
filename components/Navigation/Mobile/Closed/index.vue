@@ -1,6 +1,9 @@
 <template>
   <div class="navigation-header__right--closed">
-      <nav class="navigation-header__background"></nav>
+        <div class="navigation-header-middle__background">
+          <div class="navigation-header-middle__route-name">{{ $nuxt.$route.name }}</div>
+          <div class="navigation-header-middle__background--opacity"></div>
+        </div>
 
       <div class="navigation-header__burger navigation-header__background" @click="toggleMenu">
         <svg-burger-menu />

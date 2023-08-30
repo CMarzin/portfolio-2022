@@ -22,6 +22,12 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: 'https://plausible.io/js/script.outbound-links.tagged-events.pageview-props.js',
+        'data-domain': 'corentinmarzin.fr'
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

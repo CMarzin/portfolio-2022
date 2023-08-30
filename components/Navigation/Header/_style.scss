@@ -32,6 +32,38 @@
   }
 }
 
+.navigation-header-middle__route-name {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+
+  font-family: $j-bold;
+  font-size: var(--space-mdx); // 24px
+  line-height: var(--space-mdx); // 24px
+}
+
+.navigation-header-middle__background {
+  position: relative;
+  background-color: var(--currentGlobalColor);
+  border-radius: $base-radius;
+  transition: all .2s ease;
+
+  &--opacity {
+    position: absolute;
+    z-index: 1;
+    background-color: hsl(0, 0%, 100%, 75%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: $base-radius;
+  }
+}
+
+
 .navigation-header__logo {
   padding: $header-padding;
 

@@ -3,8 +3,8 @@
 
     <page-dots
       v-if="!mediaSize('MobileLg')"
-      v-on:update-current-project-to-right="test"
-      v-on:update-current-project-to-left="test" />
+      @updateCurrentProjecToLeft="$emit('updateCurrentProjectToLeft')"
+      @updateCurrentProjecToRight="$emit('updateCurrentProjectToRight')" />
 
     <h1 class="project-box__title">{{ projectData.title }}</h1>
     <h2 class="project-box__subtitle">{{ projectData.projectType }}</h2>
@@ -13,9 +13,6 @@
 
     <p class="project-box__description">{{ projectData.shortDescription }}</p>
 
-    <h2 class="project-box__subtitle project-box__subtitle-projects">{{ $t('OTHER PROJECTS') }}</h2>
-
-    <project-selector />
   </div>
 </template>
 
@@ -43,11 +40,6 @@
         mediaSize: 'ui/getCurrentMediaSize'
       })
     },
-    methods: {
-      test (e) {
-        console.log('e', e)
-      }
-    }
   }
 </script>
 
