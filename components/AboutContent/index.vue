@@ -10,17 +10,9 @@
 		<div class="about-content__description about-content__margin-top">
 			<p class="about-content__text">{{ $t('I am a French Front-end Developer 🇫🇷, specialized in web performance with some skills for the animation and UX.') }}</p>
 			<p class="about-content__text about-content__margin-top">{{ $t('I am a 2019 graduate of the HETIC school in Montreuil.')}}</p>
-
-			<p class="about-content__text about-content__margin-top">{{ $t('Technologies I use daily') }}</p>
-			<ul
-				v-for="(technology, index) in technologiesUsed"
-				:key="`${technology}-${index}`"
-				class="about-content__description-technology-wrapper">
-					<li class="about-content__description-technology">{{ technology }}</li>
-			</ul>
 		</div>
 
-		<h2 class="about-content__subtitle about-content__margin-top">{{ $t('Experiences') }}</h2>
+		<h2 class="about-content__subtitle about-content__margin-top--lg">📂{{ $t('Experiences') }}</h2>
 
 		<div class="about-content__experience-wrapper">
 			<div v-for="(experience, index) in experiences" :key="`${experience.companyName}-${index}`" class="about-content__experience">
@@ -31,24 +23,44 @@
 			</div>
 		</div>
 
-		<h2 class="about-content__subtitle about-content__margin-top">{{ $t('Hobbies') }}</h2>
 
-		<p class="about-content__text about-content__margin-top">{{ $t('I got a blog where I put all stuff related to Front-end development :')}} <a href="https://cocoweb.fr/">https://cocoweb.fr/</a></p>
-		<p class="about-content__text about-content__margin-top">{{ $t('You can find my Github here :')}} <a href="https://github.com/CMarzin">https://github.com/CMarzin</a></p>
-		<p class="about-content__text about-content__margin-top">{{ $t('You can find all my photographyon my unsplash profile :')}} <a href="https://unsplash.com/@marzin_corentin">https://unsplash.com/@marzin_corentin</a></p>
+		<h2 class="about-content__subtitle about-content__margin-top--lg">⚙️{{ $t('Technologies I use daily') }}</h2>
+
+		<div class="about-content__experience-wrapper">
+			<div class="about-content__experience">
+				<div class="about-content__experience-time">🎨 Front-end</div>
+				<ul>
+					<li class="about-content__text about-content__margin-top--xxs">- Vuejs 3.3, Nuxt, Typescript 5</li>
+					<li class="about-content__text about-content__margin-top--xxs">- Tailwind CSS, Postcss, SASS</li>
+					<li class="about-content__text about-content__margin-top--xxs">- Vitejs, Rollup, Bundlers...</li>
+				</ul>
+			</div>
+			<div class="about-content__experience">
+				<div class="about-content__experience-time">🛠️ Back-end</div>
+				<ul>
+						<li class="about-content__text about-content__margin-top--xxs">- Laravel 10, PHP 8, Lightouse PHP, Graphql</li>
+						<li class="about-content__text about-content__margin-top--xxs">- Docker, CLI</li>
+					</ul>
+			</div>
+		</div>
+
+		<h2 class="about-content__subtitle about-content__margin-top--lg">🗺️ {{ $t('Hobbies') }}</h2>
+
+		<p class="about-content__text about-content__margin-top">{{ $t('I got a blog where I put all stuff related to Front-end development :')}} <a class="about-content__text-bold" href="https://cocoweb.fr/">🖥️ cocoweb.fr</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('You can find my Github here :')}} <a class="about-content__text-bold" href="https://github.com/CMarzin">🐙 CMarzin</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('You can find all my photographyon my unsplash profile :')}} <a class="about-content__text-bold" href="https://unsplash.com/@marzin_corentin">📸 @marzin_corentin</a></p>
 		<p class="about-content__text about-content__margin-top">{{ $t('I really love sport, big fan of mountain bike and biking in general. I also love DIY and riding motorcycle.')}}</p>
-		<p class="about-content__text about-content__margin-top">{{ $t('If you want more information or just to say hello you can send me an email here :') }} <a href="mailto:corentinmarzin@free.fr">corentinmarzin@free.fr</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('If you want more information or just to say hello you can send me an email here :') }} <a class="about-content__text-bold" href="mailto:corentinmarzin@free.fr">✉️ corentinmarzin@free.fr</a></p>
 	</div>
 </template>
 
 <script>
-	import { experiences, technologiesUsed } from '~/static/data/index'
+	import { experiences } from '~/static/data/index'
 	export default {
 		name: 'AboutContent',
 		data() {
 			return {
-				experiences,
-				technologiesUsed
+				experiences
 			}
 		},
 	}

@@ -55,17 +55,6 @@ const experiences = [
 	},
 ]
 
-const technologiesUsed = [
-	'HTML, CSS, ES6',
-	'NUXT, VUEJS 3, TYPESCRIPT',
-	'SASS, TAILWIND CSS, BEM, CUBE CSS, POSTCSS',
-	'VITE, ROLLUP',
-	'GIT, GITLAB, GITHUB',
-	'LIGHTHOUSE, WEBPAGETEST',
-	'LARAVEL, LIGHTHOUSE-PHP, GRAPHQL'
-]
-
 export {
-	experiences,
-	technologiesUsed
+	experiences
 }

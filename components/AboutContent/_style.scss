@@ -23,7 +23,7 @@
 	font-size: var(--space-sm);
 	line-height: var(--space-mdx);
 	text-transform: uppercase;
-	letter-spacing: 8px;
+	letter-spacing: 4px;
 
 	@include mq($until: 'mobile-lg') {
 		letter-spacing: 2px;
@@ -41,6 +41,14 @@
 
 .about-content__margin-top {
 	margin-top: var(--space-unit);
+}
+
+.about-content__margin-top--lg {
+	margin-top: var(--space-lg);
+}
+
+.about-content__margin-top--xxs {
+	margin-top: var(--space-xxs);
 }
 
 .about-content__text {
@@ -104,4 +112,9 @@
 	&--yellow {
 		color: hsla(41, 100%, 59%, 1);
 	}
+}
+
+.about-content__text-bold {
+	font-family: $g-semibold;
+	letter-spacing: 1px;
 }

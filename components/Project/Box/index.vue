@@ -11,7 +11,7 @@
 
     <custom-link custom-class="project-box__project-button" :link="projectData.localUrl" />
 
-    <p class="project-box__description">{{ projectData.shortDescription }}</p>
+    <div class="project-box__description" v-html="projectData.shortDescription"></div>
 
   </div>
 </template>
