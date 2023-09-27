@@ -57,6 +57,16 @@ export default {
   modules: ['@nuxtjs/i18n'],
 
   i18n: {
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'fr',
+    strategy: 'prefix',
+    pages: {
+      about: {
+        en: '/about',
+        fr: '/a-propos',
+      }
+    },
     locales: [
       {
         code: 'en',
@@ -67,9 +77,7 @@ export default {
         file: 'fr-FR.js'
       }
     ],
-    lazy: true,
-    langDir: 'lang/',
-    defaultLocale: 'fr'
+
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

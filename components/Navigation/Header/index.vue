@@ -1,7 +1,7 @@
 <template>
   <header class="navigation-header">
 
-    <nuxt-link to='/' class="navigation-header__logo navigation-header__background">
+    <nuxt-link :to='`/${$i18n.locale}`' class="navigation-header__logo navigation-header__background">
       <svg-logo />
     </nuxt-link>
 
@@ -20,6 +20,14 @@
         menuState: 'ui/getMenuState',
         mediaSize: 'ui/getCurrentMediaSize'
       }),
+      lol () {
+        console.log('this.$i18n', this.$i18n)
+        return ''
+      },
+      availableLocales() {
+        console.log('this.$i18n.locales', this.$i18n.locale)
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    },
       currentMenuComponent () {
         if (process.browser) {
           const display = this.mediaSize('MobileLg') ? 'Mobile' : 'Desktop'

@@ -2,7 +2,7 @@
 	<section class="splide" aria-label="Splide Basic HTML Example">
 		<div class="splide__track">
 			<ul class="splide__list">
-				<li v-for="(project, index) in projects" :key="`${index}-asdasdas`" :class="`splide__slide u-bg-${project.color}`">
+				<li v-for="(project, index) in projects" :key="`${index}`" :class="`splide__slide u-bg-${project.color}`">
 					<project-box :project-data="project" />
 				</li>
 			</ul>

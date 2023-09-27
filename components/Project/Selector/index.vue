@@ -1,9 +1,15 @@
 <template>
   <ul class="project-selector__container" @mouseleave="setHoveredProject(projects[0])">
     <li v-for="({hovered, url, color, name, subtitle}, index) in projects" :key="subtitle + index">
-      <a :href="url" :class="['project-selector__link', hovered ? 'project-selector__link--selected' : '', `project-selector__color--${color}`]" @mouseover="setHoveredProject(projects[index])">
-        <p class="project-selector__name">{{ name }}</p>
-        <p class="project-selector__subtitle">{{ subtitle }}</p>
+      <a
+        :href="url"
+        :class="[
+          'project-selector__link', hovered ? 'project-selector__link--selected' : '',
+          `project-selector__color--${color}`
+        ]"
+        @mouseover="setHoveredProject(projects[index])">
+          <p class="project-selector__name">{{ name }}</p>
+          <p class="project-selector__subtitle">{{ subtitle }}</p>
       </a>
     </li>
   </ul>

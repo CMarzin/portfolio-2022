@@ -2,8 +2,8 @@
   border-radius: 4px;
 }
 
-.u-bg-yellow { background-color: $yellow }
+.u-bg-yellow { background-color: $yellow; color: $dark-blue; }
 .u-bg-white-90 { background-color: $white-90 }
-.u-bg-dark-blue { background-color: $dark-blue }
-.u-bg-red { background-color: $red }
-.u-bg-white-red { background-color: $white-red }
+.u-bg-dark-blue { background-color: $dark-blue; color: $white-90; }
+.u-bg-red { background-color: $red; color: $white-90;}
+.u-bg-white-red { background-color: $white-red; color: $white-90;}

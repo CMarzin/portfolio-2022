@@ -45,7 +45,7 @@
   @include mq($until: 'mobile-lg') {
     margin-top: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh 1fr auto;
+    grid-template-rows: 1fr auto;
   }
 }
 
@@ -62,7 +62,7 @@
   grid-row-gap: $column-gap;
 
   @include mq($until: 'mobile-lg') {
-    order: 1;
+    display: none;
   }
 
   .default-layout__aside-box {
