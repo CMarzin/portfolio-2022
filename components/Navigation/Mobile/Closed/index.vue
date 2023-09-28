@@ -1,7 +1,7 @@
 <template>
   <div class="navigation-header__right--closed">
         <div class="navigation-header-middle__background">
-          <div class="navigation-header-middle__route-name">{{ $nuxt.$route.name }}</div>
+          <div class="navigation-header-middle__route-name dssds">{{ $nuxt.$route.name }}</div>
           <div class="navigation-header-middle__background--opacity"></div>
         </div>
 

@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :class="`${customClass} custom-link`" :to="link">
+  <nuxt-link :class="`${customClass} custom-link`" :to="localePath(link)">
     <svg-custom-link />
     <span class="custom-link__text">{{ $t('Go to project') }}</span>
   </nuxt-link>

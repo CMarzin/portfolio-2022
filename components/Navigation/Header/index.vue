@@ -1,7 +1,7 @@
 <template>
   <header class="navigation-header">
 
-    <nuxt-link :to='`/${$i18n.locale}`' class="navigation-header__logo navigation-header__background">
+    <nuxt-link :to="localePath('/')" class="navigation-header__logo navigation-header__background">
       <svg-logo />
     </nuxt-link>
 

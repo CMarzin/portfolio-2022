@@ -1,7 +1,7 @@
 <template>
   <ol class="breadcrumb">
     <li class="item">
-      <nuxt-link :to="'/'" class="title">
+      <nuxt-link :to="localePath('/')" class="title">
         {{ $t(Home) }}
       </nuxt-link>
     </li>

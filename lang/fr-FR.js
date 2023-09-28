@@ -1,4 +1,6 @@
 export default {
+  index___fr: 'Accueil',
+  about___fr: 'A propos',
   home: 'Accueil',
   about: 'A propos',
   close: 'fermer',

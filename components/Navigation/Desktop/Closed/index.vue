@@ -1,7 +1,7 @@
 <template>
   <div class="navigation-header__right--closed">
       <div class="navigation-header-middle__background">
-        <div class="navigation-header-middle__route-name">{{ routeName }}</div>
+        <div class="navigation-header-middle__route-name">{{ $t($nuxt.$route.name) }}</div>
         <div class="navigation-header-middle__background--opacity"></div>
       </div>
 
@@ -17,6 +17,7 @@
     mixins: [NavigationHeaderMixins],
     computed: {
       routeName() {
+        console.log('this.$nuxt.$route', this.$nuxt.$route.name)
         return this.$nuxt.$route.path === '/' ? this.$t('home') : this.$t('about')
       }
     }
