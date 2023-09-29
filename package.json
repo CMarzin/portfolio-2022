@@ -13,7 +13,7 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^7.2.0",
+    "@nuxtjs/i18n": "^7.3.1",
     "@splidejs/splide": "^4.0.7",
     "@splidejs/vue-splide": "^0.6.7",
     "core-js": "^3.19.3",
@@ -37,9 +37,6 @@
     "prettier": "^2.5.1",
     "sass": "^1.49.9",
     "sass-loader": "^10.2.1"
-  },
-  "volta": {
-    "node": "14.17.0"
   },
   "engines": {
     "node": "14.17.0"
