@@ -6,7 +6,7 @@
 
       <ul v-if="item.submenu" class="navigation-header__nav-submenu-content">
         <li v-for="(subItem, subIndex) in item.sublevel" :key="`${subItem.name}-${subIndex}`" class="navigation-header__nav-item navigation-header__nav-sub-item">
-          <nuxt-link class="navigation-header__nav-item-link navigation-header__nav-sub-item-link" :to="localePath(subItem.url)">{{ $t(subItem.name) }}</nuxt-link>
+          <nuxt-link v-if="subItem.langSwitcher" class="navigation-header__nav-item-link navigation-header__nav-sub-item-link" :to="switchLocalePath(subItem.url)">{{ $t(subItem.name) }}</nuxt-link>
         </li>
       </ul>
 

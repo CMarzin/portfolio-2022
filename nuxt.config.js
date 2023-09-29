@@ -61,11 +61,23 @@ export default {
     langDir: 'lang/',
     defaultLocale: 'fr',
     parsePages: false,
-    strategy: 'prefix',
+    strategy: 'prefix_and_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true // Redirect only on root, not on all pages
+    },
     pages: {
       about: {
         en: '/about',
         fr: '/a-propos',
+      }
+    },
+    vueI18n: {
+      fallbackLocale: 'fr',
+      messages: {
+        en: require('./lang/en-US.js'), // Replace with your English locale messages
+        fr: require('./lang/fr-FR.js') // Replace with your French locale messages
       }
     },
     locales: [
