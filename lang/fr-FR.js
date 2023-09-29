@@ -1,8 +1,8 @@
 export default {
   index___fr: 'Accueil',
   about___fr: 'A propos',
-  home: 'Accueil',
-  about: 'A propos',
+  Home: 'Accueil',
+  About: 'A propos',
   close: 'fermer',
   'ES6, NUXT and VUEJS': 'ES6, NUXT et VUEJS',
   'Hobbies': 'Activitées',
