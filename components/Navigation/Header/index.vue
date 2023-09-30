@@ -20,14 +20,6 @@
         menuState: 'ui/getMenuState',
         mediaSize: 'ui/getCurrentMediaSize'
       }),
-      lol () {
-        console.log('this.$i18n', this.$i18n)
-        return ''
-      },
-      availableLocales() {
-        console.log('this.$i18n.locales', this.$i18n.locale)
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
-    },
       currentMenuComponent () {
         if (process.browser) {
           const display = this.mediaSize('MobileLg') ? 'Mobile' : 'Desktop'

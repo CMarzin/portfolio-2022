@@ -24,7 +24,8 @@
 			new Splide( '.splide', {
 				  type: 'loop',
 					padding: '1rem',
-					arrows: false
+					arrows: false,
+					pagination: false
 			}).mount()
 		},
 	}

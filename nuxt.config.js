@@ -62,11 +62,7 @@ export default {
     defaultLocale: 'fr',
     parsePages: false,
     strategy: 'prefix_and_default',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      onlyOnRoot: true // Redirect only on root, not on all pages
-    },
+    detectBrowserLanguage: false,
     pages: {
       about: {
         en: '/about',

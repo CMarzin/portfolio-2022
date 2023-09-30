@@ -62,9 +62,17 @@
         } else {
           this.currentProjectIndex--
         }
-        const index = this.currentProjectIndex % this.projectDataBox.length
-        this.currentProject = this.projectDataBox[index]
-        this.currentProjectIndex = index
+
+        let index = this.currentProjectIndex % this.projectDataBox.length
+
+        if (index === -1) {
+          index = this.projectDataBox.length - 1
+          this.currentProject = this.projectDataBox[index]
+          this.currentProjectIndex = index
+        } else {
+          this.currentProject=this.projectDataBox[index]
+          this.currentProjectIndex=index
+        }
 
         const root = document.documentElement;
 
