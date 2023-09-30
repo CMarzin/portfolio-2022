@@ -66,6 +66,7 @@
 
 .navigation-header__logo {
   padding: $header-padding;
+  margin: 0;
 
   @include mq($until: 'tablet') {
     display: flex;

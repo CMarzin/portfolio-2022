@@ -9,7 +9,7 @@
     <h1 class="project-box__title">{{ projectData.title }}</h1>
     <h2 class="project-box__subtitle">{{ projectData.projectType }}</h2>
 
-    <custom-link custom-class="project-box__project-button" :link="projectData.externalUrl" />
+    <custom-link custom-class="project-box__project-button" :link="projectData.externalUrl" external />
 
     <div class="project-box__description" v-html="projectData.shortDescription"></div>
 

@@ -1,5 +1,9 @@
 <template>
-  <nuxt-link :class="`${customClass} custom-link`" :to="localePath(link)">
+  <a v-if="external" :class="`${customClass} custom-link`" :href="link">
+    <svg-custom-link />
+    <span class="custom-link__text">{{ $t('Go to project') }}</span>
+  </a>
+  <nuxt-link v-else :class="`${customClass} custom-link`" :to="localePath(link)">
     <svg-custom-link />
     <span class="custom-link__text">{{ $t('Go to project') }}</span>
   </nuxt-link>
@@ -16,6 +20,10 @@
         type: String,
         default: () => ''
       },
+      external: {
+        type: Boolean,
+        default: false
+      }
     },
   }
 </script>
