@@ -26,7 +26,7 @@ export default [
 
 		`,
 		stack: '',
-		color: ''
+		color: 'white-90'
 	},
 	{
 		title: 'Allegro Musique',
@@ -55,7 +55,7 @@ export default [
 
 		`,
 		stack: '',
-		color: ''
+		color: 'yellow'
 	},
 	{
 		title: 'Forss',
@@ -71,7 +71,7 @@ export default [
 			<p>Je suis assez fier de ce site, principalement pour la gestion des strates avec le CSS.</p>
 		`,
 		stack: '',
-		color: ''
+		color: 'red'
 	},
 	{
 		title: 'Orange',
@@ -91,7 +91,7 @@ export default [
 			<p>J'ai aussi développer la majorité du tunnel d'achat en vuejs afin d'avoir quelque chose d'entièrement personnalisable pour l'utilisateur.</p>
 		`,
 		stack: '',
-		color: ''
+		color: 'dark-blue'
 	},
 	{
 		title: 'Nayact Transparency',
@@ -116,6 +116,6 @@ export default [
 			</dl>
 		`,
 		stack: '',
-		color: ''
+		color: 'dark-blue'
 	},
 ]
