@@ -27,7 +27,7 @@
           title: 'YSF',
           projectType: 'Agency website',
           date: '',
-          externalUrl: 'https://ysf-preprod.herokuapp.com/',
+          externalUrl: 'https://ysf.cocoweb.fr/',
           localUrl: '/ysf',
           background: 'ysf.png',
           shortDescription: 'Création d\'un site d\'agence web pour des copains de promotions.',

@@ -3,11 +3,11 @@ export default [
 		title: 'YSF',
 		projectType: 'Agency website',
 		date: '2018-2019',
-		externalUrl: 'https://ysf-preprod.herokuapp.com/',
+		externalUrl: 'https://ysf.cocoweb.fr/',
 		localUrl: '',
 		background: 'ysf.png',
-		projectLink: 'https://ysf-preprod.herokuapp.com/',
-		repoLink: 'https://ysf-preprod.herokuapp.com/',
+		projectLink: 'https://ysf.cocoweb.fr/',
+		repoLink: 'https://ysf.cocoweb.fr/',
 		shortDescription: `
 			<p>Création d'un site d'agence web pour des camarades de promotions. ( HETIC P2019 )</p>
 
