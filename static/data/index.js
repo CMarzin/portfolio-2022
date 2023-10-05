@@ -2,8 +2,8 @@ const experiences = [
 	{
 		startTime: 'September 2022',
 		endTime: 'Today',
-		companyName: 'Qairn',
-		companyWebsite: 'Qairn',
+		companyName: 'Ubaq',
+		companyWebsite: 'Ubaq',
 		places: '🇫🇷 Paris, France',
 		color: 'blue',
 		desc: 'Full time, Front-end developper'

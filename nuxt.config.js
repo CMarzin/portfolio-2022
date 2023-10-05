@@ -64,9 +64,9 @@ export default {
     strategy: 'prefix_and_default',
     detectBrowserLanguage: false,
     pages: {
-      about: {
-        en: '/about',
-        fr: '/a-propos',
+      project: {
+        en: '/project',
+        fr: '/projets',
       }
     },
     vueI18n: {

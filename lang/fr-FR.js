@@ -1,8 +1,10 @@
 export default {
   index___fr___default: 'Accueil',
   about___fr___default: 'A propos',
+  project___fr___default: 'Projets',
   Home: 'Accueil',
   About: 'A propos',
+  Project: 'Projet',
   close: 'fermer',
   Language: 'Langues 🌎',
   French: 'Français 🇫🇷',
