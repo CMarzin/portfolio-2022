@@ -48,7 +48,7 @@
 
 		<p class="about-content__text about-content__margin-top">{{ $t('I got a blog where I put all stuff related to Front-end development :')}} <a class="about-content__text-bold" href="https://cocoweb.fr/">🖥️ cocoweb.fr</a></p>
 		<p class="about-content__text about-content__margin-top">{{ $t('You can find my Github here :')}} <a class="about-content__text-bold" href="https://github.com/CMarzin">🐙 CMarzin</a></p>
-		<p class="about-content__text about-content__margin-top">{{ $t('You can find all my photographyon my unsplash profile :')}} <a class="about-content__text-bold" href="https://unsplash.com/@marzin_corentin">📸 @marzin_corentin</a></p>
+		<p class="about-content__text about-content__margin-top">{{ $t('You can find all my photography on my unsplash profile :')}} <a class="about-content__text-bold" href="https://unsplash.com/@marzin_corentin">📸 @marzin_corentin</a></p>
 		<p class="about-content__text about-content__margin-top">{{ $t('I really love sport, big fan of mountain bike and biking in general. I also love DIY and riding motorcycle.')}}</p>
 		<p class="about-content__text about-content__margin-top">{{ $t('If you want more information or just to say hello you can send me an email here :') }} <a class="about-content__text-bold" href="mailto:corentinmarzin@free.fr">✉️ corentinmarzin@free.fr</a></p>
 	</div>

@@ -1,4 +1,5 @@
-export default [
+export default () => {
+	return [
 	{
 		title: 'YSF',
 		projectType: 'Agency website',
@@ -9,7 +10,6 @@ export default [
 		projectLink: 'https://ysf.cocoweb.fr/',
 		repoLink: 'https://ysf.cocoweb.fr/',
 		shortDescription: `
-			<p>Création d'un site d'agence web pour des camarades de promotions. ( HETIC P2019 )</p>
 
 			<p>J'ai développé ce site pendant mes études entre fin 2018 et 2019.</p>
 
@@ -119,3 +119,4 @@ export default [
 		color: 'dark-blue'
 	},
 ]
+}

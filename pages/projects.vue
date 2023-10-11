@@ -33,9 +33,9 @@
     },
     data() {
       return {
-        projectDataBox: projects,
+        projectDataBox: projects(),
         currentProjectIndex: 0,
-        currentProject: projects[0]
+        currentProject: projects()[0]
       }
     },
     computed: {
@@ -44,6 +44,7 @@
       }),
     },
     mounted () {
+      console.log('this.', this.$t('projects.ysf.create'))
       document.addEventListener('keydown', (e) => {
         switch (e.key) {
           case 'ArrowRight':
@@ -70,7 +71,7 @@
           this.currentProject = this.projectDataBox[index]
           this.currentProjectIndex = index
         } else {
-          this.currentProject=this.projectDataBox[index]
+          this.currentProject = this.projectDataBox[index]
           this.currentProjectIndex=index
         }
 

@@ -70,9 +70,9 @@
 .navigation-header__nav-submenu-content {
   display: none;
   position: absolute;
-  width: 100%;
+  width: calc(100% + 2px);
   left: 0px;
-  top: calc(#{$header-size} - 3px); // to pass beneath the main menu border
+  top: calc(#{$header-size} + 5px); // to pass beneath the main menu border
 
   border: 2px solid $white;
   border-top: none;

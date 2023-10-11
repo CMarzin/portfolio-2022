@@ -5,9 +5,9 @@ export default [
     url: '/'
   },
   {
-    name: 'Project',
+    name: 'Projects',
     submenu: false,
-    url: 'project'
+    url: 'projects'
   },
   {
     name: 'Language',

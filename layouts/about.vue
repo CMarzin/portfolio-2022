@@ -15,7 +15,7 @@
 
       <aside v-show="isDesktop" class="about-layout__aside">
 
-			 	<img class="about-layout__image" src="@/assets/images/myself.jpg" />
+        <img class="about-layout__image" src="@/assets/images/myself.jpg" />
 
 			  <footer v-show="isDesktop" class="about-layout__aside-box about-layout__aside-part-6">
           <footer-component />

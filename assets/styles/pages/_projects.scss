@@ -42,7 +42,7 @@
 .projects__container .projects__grid-part-2,
 .projects__container .projects__grid-part-3,
 .projects__container .projects__grid-part-4 {
-  background-color: $background-grid;
+  background-color: transparent;
 
   @include mq($until: 'mobile-lg') {
     display: none;

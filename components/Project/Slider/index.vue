@@ -15,9 +15,9 @@
 	import projects from '~/static/data/projects'
 	import '@splidejs/splide/dist/css/splide.min.css'
 	export default {
-		data() {
-			return {
-				projects
+		computed: {
+			projects() {
+				return projects()
 			}
 		},
 		mounted () {

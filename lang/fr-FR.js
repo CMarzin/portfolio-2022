@@ -1,10 +1,10 @@
 export default {
   index___fr___default: 'Accueil',
   about___fr___default: 'A propos',
-  project___fr___default: 'Projets',
+  projects___fr___default: 'Projets',
   Home: 'Accueil',
   About: 'A propos',
-  Project: 'Projet',
+  Projects: 'Projets',
   close: 'fermer',
   Language: 'Langues 🌎',
   French: 'Français 🇫🇷',
@@ -21,7 +21,7 @@ export default {
   'I got a blog where I put all stuff related to Front-end development :': 'J\'ai un blog ou je poste toutes ma veille digital :',
   'Technologies I use daily': 'Technologies que j\'utilise',
   'You can find my Github here :': 'Vous pouvez retrouver mon profil Github ici :',
-  'You can find all my photographyon my unsplash profile :': 'Vous pouvez retrouver toutes mes photos sur mon profil unsplash :',
+  'You can find all my photography on my unsplash profile :': 'Vous pouvez retrouver toutes mes photos sur mon profil unsplash :',
   'I really love sport, big fan of mountain bike and biking in general. I also love DIY and riding motorcycle.': 'Je suis un grand sportif, fan de VTT et de vélo en général. J’aime beaucoup le bricolage et la moto.',
   'If you want more information or just to say hello you can send me an email here :': 'Si vous voulez plus d’informations ou juste pour me dire bonjour vous pouvez m’envoyer un email ici :',
   'September 2022': 'Septembre 2022',
@@ -39,5 +39,10 @@ export default {
   'Sandwich courses, Full-Stack developper': 'Alternance, développeur Full-Stack',
   'Full time, Front-end developper': 'CDI, développeur Front-End',
   'Training courses, Full-Stack developper': 'Stagiaire, développeur Full-Stack',
-  'Training courses, Front-end developper': 'Stagiaire, développeur Front-End'
+  'Training courses, Front-end developper': 'Stagiaire, développeur Front-End',
+  projects: {
+    ysf: {
+      create: "Création d'un site d'agence web pour des camarades de promotions. ( HETIC P2019 )"
+    }
+  }
 }
