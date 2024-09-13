@@ -17,13 +17,11 @@
     "@splidejs/splide": "^4.0.7",
     "@splidejs/vue-splide": "^0.6.7",
     "core-js": "^3.19.3",
-    "fibers": "^5.0.1",
     "gsap": "^3.10.4",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.0",
-    "vue-server-renderer": "^2.7.0",
-    "vue-template-compiler": "^2.7.0",
-    "webpack": "^4.46.0"
+    "nuxt": "^2.18.1",
+    "vue": "^2.7.16",
+    "vue-server-renderer": "^2.7.16",
+    "vue-template-compiler": "^2.7.16"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
@@ -35,10 +33,10 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "prettier": "^2.5.1",
-    "sass": "^1.49.9",
-    "sass-loader": "^10.2.1"
+    "sass": "^1.78.0",
+    "sass-loader": "^10.4.1"
   },
   "engines": {
-    "node": "14.21.3"
+    "node": "18.20.4"
   }
 }
