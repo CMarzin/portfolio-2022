@@ -18,7 +18,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        src: 'https://plausible.io/js/script.outbound-links.tagged-events.pageview-props.js',
+        src: 'https://plausible.cocommit.fr/js/script.outbound-links.tagged-events.pageview-props.js',
         'data-domain': 'corentinmarzin.fr'
       }
     ]
