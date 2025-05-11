@@ -4,11 +4,11 @@ export default () => {
 		title: 'YSF',
 		projectType: 'Agency website',
 		date: '2018-2019',
-		externalUrl: 'https://ysf.cocoweb.fr/',
+		externalUrl: 'https://ysf.cocommit.fr/',
 		localUrl: '',
 		background: 'ysf.png',
-		projectLink: 'https://ysf.cocoweb.fr/',
-		repoLink: 'https://ysf.cocoweb.fr/',
+		projectLink: 'https://ysf.cocommit.fr/',
+		repoLink: 'https://ysf.cocommit.fr/',
 		shortDescription: `
 
 			<p>J'ai développé ce site pendant mes études entre fin 2018 et 2019.</p>
